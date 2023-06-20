@@ -187,6 +187,61 @@ font-size: .85rem;
 }
 
 
+/*portfolio*/
+
+.info-portfolios img{
+
+padding : 15px 15px 15px 15px;
+
+}
+
+
+
+/************servicios ***********/
+
+
+.service-card{
+  margin: 1rem auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+.service-card svg {
+  fill: #2599d5;
+  margin-bottom: 1rem;
+}
+
+
+/************testimonios ***********/
+
+
+
+.testimonios{
+  
+  display: flex;
+  align-items: center;
+}
+
+
+.testimonio-card{
+  width: 800px;
+  height: 200px;
+  background-color:var(--first-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+.testimonio-card img{
+padding-top:15px ;  
+height: 100px;
+width: 100px;
+border-radius: 50px;
+
+
+}
+
 
 
 /**********Utilities**********/
@@ -225,6 +280,17 @@ font-size: .85rem;
 .section  {
 
   padding: 2rem 1rem;
+}
+
+.section-title {
+
+  border-top: thin solid var(--first-color);
+  border-bottom: thin solid var(--first-color);
+  width: 250px;
+  margin: 2rem auto;
+  padding: .5rem 1rem;
+  text-align: center;
+
 }
 
 
@@ -301,6 +367,19 @@ padding: 1rem;
 
 
 @media screen  and (min-width:768px) {
+
+  .servicios > .container{
+    display: grid;
+    grid-template-columns: repeat(2 ,45%);
+    justify-content: space-between;
+    align-content: center;
+  }
+
+  .servicios .section-title{
+    grid-column: span 2;
+  }
+
+
   .menu-btn{
     display: none;
   }
@@ -340,7 +419,63 @@ padding: 1rem;
 
   }
   
+
+  .servicios > .container{
+    
+    grid-template-columns: repeat(3 ,30%);
+  
+  }
+
+  .servicios .section-title{
+    grid-column: span 3;
+  }
 }
+
+
+/***/
+
+/*****************************************/
+
+
+/*****************************************/
+
+
+
+
+
+.contact-section{
+height:100vh;
+
+}
+
+
+.contact-cards {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.contact-cards > aside{
+
+  padding:  3rem;
+}
+
+
+.contact-form{
+display: grid;
+grid-template-columns: repeat(2,30%);
+justify-content: center;
+}
+
+
+.contact-form textarea{
+  grid-column: span 2;
+}
+
+.contact-form input:nth-child(3){
+  grid-column: span 2;
+}
+
 
 
 
